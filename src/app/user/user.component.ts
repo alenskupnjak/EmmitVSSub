@@ -20,10 +20,10 @@ export class UserComponent implements OnInit {
   }
 
   onActivatedLosije() {
-    this.userService.activatedEmitterLosije.emit(true);
+    this.userService.EmitterLosije.emit(true);
   }
 
   onActivatedBolje() {
-    this.userService.activatedEmitterBolje.next(true);
+    this.userService.SubjectBolje.next(true);
   }
 }

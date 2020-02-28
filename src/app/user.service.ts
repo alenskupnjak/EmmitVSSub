@@ -6,8 +6,8 @@ import { Subject } from 'rxjs';
 
 export class UserService {
   // primjer sa EventEmitter
-  activatedEmitterLosije = new EventEmitter<boolean>();
+  EmitterLosije = new EventEmitter<boolean>();
 
   // primjer sa Subject to koristi preporuka
-  activatedEmitterBolje = new Subject<boolean>();
+  SubjectBolje = new Subject<boolean>();
 }

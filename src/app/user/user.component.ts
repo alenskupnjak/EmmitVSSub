@@ -9,13 +9,16 @@ import { UserService } from '../user.service';
 })
 export class UserComponent implements OnInit {
   id: number;
+  konj: number;
 
-  constructor(private route: ActivatedRoute,
+  constructor(private router: ActivatedRoute,
               private userService: UserService) {}
 
   ngOnInit() {
-    this.route.params.subscribe((params: Params) => {
+    this.router.params.subscribe((params: Params) => {
+      console.log(params);
       this.id = +params.id;
+      this.konj = +params.konj;
     });
   }
 

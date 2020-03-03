@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { UserService } from '../user.service';
 
@@ -13,6 +13,8 @@ export class UserComponent implements OnInit {
 
   constructor(private router: ActivatedRoute,
               private userService: UserService) {}
+
+
 
   ngOnInit() {
     this.router.params.subscribe((params: Params) => {
